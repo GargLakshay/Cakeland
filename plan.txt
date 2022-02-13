@@ -15,10 +15,32 @@
 [] Create cart homepage
   - order summary section
   - empty cart section
-[] Create Order controller and link it in server.js
-[] Create Orders view with table for customer and admin
-[] Create Orders single page with status
+[] Create routes to routes files
+[] create dedicated controllers
+[] add to cart functionality
+  [] Fetch all pizzas from db and show on home page
+  [] Create menu model and put dummy Data
+  -connect to mongo db
+  -use connect-mongo for session store
+     -dependencies
+     -mongoose, expresss-session, connect-mongo, dotenv
+  -axios to send ajax request
+  -install notification library npm i noty https://ned.im/noty/#/
 [] Create login page with route
 [] Create register page with route
 [] Build register crud
   - dependencies express-flash express-session cookie-parser
+  -status code article https://www.restapitutorial.com/httpstatuscodes.html
+[] Build login using passport
+    -install dependencies passport passport-local express-session
+[] Create Order controller and link it in server.js
+[] Create Orders view with table for customer and admin
+[] Create Orders single page with status
+[] Create order on Cart page
+[] Place order functionality
+[] Order tracker
+
+
+
+factory functions.
+axios- call to server
