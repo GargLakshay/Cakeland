@@ -7,6 +7,7 @@ const expressLayout=require('express-ejs-layouts')
 const mongoose=require('mongoose');
 const session=require('express-session')
 const flash=require('express-flash')
+const passport=require('passport')
 const MongoDbStore=require('connect-mongo')(session)
 //Database connection
 const url= 'mongodb://localhost/pizza';
@@ -18,6 +19,8 @@ connection.once('open',()=>{
 // .catch ( (err) => {
 //   console.log('connection failed..')
 // });
+
+
 
 //session store
 let mongoStore= new MongoDbStore({
@@ -36,13 +39,21 @@ app.use(session({
 }))
 app.use(flash())
 
+//passport config
+app.use(passport.initialize())
+app.use(passport.session())
+const passportInit= require('./app/config/passport')
+passportInit(passport)
+
 //Assets
 app.use(express.static("public"))
+app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 
 //global middleware
 app.use((req,res,next)=>{
   res.locals.session = req.session
+  res.locals.user=req.user
   next();
 })
 

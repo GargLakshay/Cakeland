@@ -39,7 +39,11 @@
 [] Create order on Cart page
 [] Place order functionality
 [] Order tracker
-
+  -dependencies moment
+[] socket mongooseConnection
+  -dependencies socket.io
+[] build project for deployment
+[] deploy project on live server
 
 
 factory functions.
