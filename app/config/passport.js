@@ -32,6 +32,7 @@ function init(passport){
         done(err,user)
     })
   })
+  //req.user
 }
 
 module.exports = init

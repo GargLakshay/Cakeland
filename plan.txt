@@ -36,8 +36,9 @@
 [] Create Order controller and link it in server.js
 [] Create Orders view with table for customer and admin
 [] Create Orders single page with status
-[] Create order on Cart page
 [] Place order functionality
+[] Show all my orders on customer orders page
+[] Create Orders single page with status
 [] Order tracker
   -dependencies moment
 [] socket mongooseConnection
