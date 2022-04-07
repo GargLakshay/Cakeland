@@ -1,4 +1,4 @@
-[] Create directory structure
+  [] Create directory structure
 [] Create a NPM project and install all dependencies
     -Dependencies
       -express
@@ -38,6 +38,8 @@
 [] Create Orders single page with status
 [] Place order functionality
 [] Show all my orders on customer orders page
+[] show orders on admin orders page
+[] change order status
 [] Create Orders single page with status
 [] Order tracker
   -dependencies moment

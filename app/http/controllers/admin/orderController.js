@@ -9,6 +9,7 @@ function orderController(){
           return res.json(orders)
         } else
          {
+           // console.log(orders)
           return res.render('admin/orders')
          }
       })
