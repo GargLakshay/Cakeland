@@ -12,7 +12,7 @@ const MongoDbStore=require('connect-mongo')(session)
 const Emitter = require('events')
 
 //Database connection
-const url= 'mongodb://localhost/pizza';
+const url= 'mongodb+srv://admin-Cakeland:test123@cluster0.nwapp.mongodb.net/Cakeland';
 mongoose.connect(url,{useNewUrlParser: true}) ;
 const connection=mongoose.connection;
 connection.once('open',()=>{
@@ -79,9 +79,9 @@ const server = app.listen(PORT,function(){
 const io=require('socket.io')(server)
 io.on('connection',(socket)=>{
   //join
-  console.log(socket.id)
+  // console.log(socket.id)
   socket.on('join',(orderId)=>{
-    console.log(orderId)
+    // console.log(orderId)
     socket.join(orderId)
   })
 })

@@ -6,8 +6,8 @@ function cartController(){
      update(req,res){
        // let cart = {
        //   items:{
-       //     pizzaid1:{ item:pizza_object,qty:0};
-       //     pizzaid2:{ item:pizza_object,qty:0};
+       //     cakeid1:{ item:cake_object,qty:0};
+       //     cakeid2:{ item:cake_object,qty:0};
        //   },
        //   totalqnt:0,
        //   totalPrice:0

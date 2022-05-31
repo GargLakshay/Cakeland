@@ -2,13 +2,14 @@ import axios from 'axios'
 import Noty from 'noty'
 import initAdmin from './admin'
 import moment from 'moment'
+import {initStripe} from './stripe'
 
 let addToCart = document.querySelectorAll('.add-to-cart')
 
 let cartCounter = document.querySelector('#cartCounter')
 
-function updateCart(pizza) {
-  axios.post('/update-cart', pizza).then(res => {
+function updateCart(cake) {
+  axios.post('/update-cart', cake).then(res => {
     cartCounter.innerText = res.data.totalQty;
     new Noty({
       type: 'success',
@@ -30,8 +31,8 @@ function updateCart(pizza) {
 
 addToCart.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    let pizza = JSON.parse(btn.dataset.pizza);
-    updateCart(pizza)
+    let cake = JSON.parse(btn.dataset.cake);
+    updateCart(cake)
   })
 })
 
@@ -78,18 +79,19 @@ function updateStatus(order){
 }
 
 updateStatus(order);
+initStripe()
 
 //socket
 let socket = io()
-initAdmin(socket)
+
 // join
 if(order){
 socket.emit('join', `order_${order._id}`)
 }
 
 let adminAreaPath = window.location.pathname
-console.log(adminAreaPath)
 if(adminAreaPath.includes('admin')){
+  initAdmin(socket)
   socket.emit('join','adminRoom')
 }
 
@@ -106,3 +108,9 @@ socket.on('orderUpdated',(data)=>{
     text: "Order Updated!!"
   }).show();
 })
+
+var loginForm = document.getElementById("loginForm");
+
+document.getElementById("loginBtn").addEventListener("click", function () {
+  loginForm.submit();
+});

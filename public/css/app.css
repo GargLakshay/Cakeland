@@ -281,18 +281,22 @@ body {
   color: #232323;
 }
 
+.logo_heading {
+  color: #DA0037;
+}
+
 nav li:last-child a {
-  background: #FE5F1E;
+  background: #203239;
 }
 nav li:last-child a:hover {
-  background: #b23301;
+  background: #334756;
 }
 
 nav li a {
   transition: all 0.3s ease-in-out;
 }
 nav li a:hover {
-  color: #FE5F1E;
+  color: #203239;
 }
 
 section.hero {
@@ -304,29 +308,29 @@ section.hero {
 }
 
 .add-to-cart {
-  border: 2px solid #FE5F1E;
-  color: #FE5F1E;
+  border: 2px solid #203239;
+  color: #203239;
   transition: all 0.3s ease-in-out;
 }
 .add-to-cart:hover {
-  background: #FE5F1E;
+  background: #203239;
   border: #fff;
   color: #fff;
 }
 
 .btn-primary {
-  background: #FE5F1E;
+  background: #203239;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background: #b23301;
+  background: #334756;
 }
 
 section.cart {
   background: #F8F8F8;
 }
 section.cart .amount {
-  color: #FE5F1E;
+  color: #203239;
 }
 
 section.login {
@@ -334,10 +338,10 @@ section.login {
   min-height: calc(100vh - 86px);
 }
 section.login a {
-  color: #FE5F1E;
+  color: #203239;
 }
 section.login a:hover {
-  color: #b23301;
+  color: #334756;
 }
 
 .noty_theme__mint {
@@ -345,8 +349,8 @@ section.login a:hover {
   padding-left: 8px !important;
 }
 
-a.link {
-  color: #FE5F1E;
+a.link:hover {
+  color: #DA0037;
 }
 
 section.status {
@@ -443,15 +447,56 @@ section.status {
 }
 
 .status-box ul li.current span {
-  color: #FE5F1E;
+  color: #203239;
 }
 
 .status-box ul li.current span:after {
-  background: #FE5F1E;
+  background: #203239;
 }
 
 .status-box ul li small {
   float: right;
   font-size: 14px;
   margin-top: 8px;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    max-width: 90%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  .status-box ul li span:before {
+    font-size: 34px;
+  }
+}
+.StripeElement {
+  box-sizing: border-box;
+  width: 50%;
+  margin-left: auto;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }

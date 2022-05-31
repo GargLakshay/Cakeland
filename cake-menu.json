@@ -1,0 +1,73 @@
+[{
+  "_id": {
+    "$oid": "5eee651f739f8c674fd736ee"
+  },
+  "name": "Chocolate Cake",
+  "image": "cake5.jpg",
+"retailer_name":"retailer1",
+  "price": "250",
+  "size": "small"
+},{
+  "_id": {
+    "$oid": "5eee6671a27a66807cf2bea3"
+  },
+  "name": "Anniversary Cake",
+  "image": "cake4.jpg",
+	"retailer_name":"retailer2",
+  "price": "700",
+  "size": "medium"
+},{
+  "_id": {
+    "$oid": "5eee6692a27a66807cf2bea4"
+  },
+  "name": "Black Forest",
+  "image": "cake2.jpg",
+"retailer_name":"retailer3",
+  "price": "500",
+  "size": "small"
+},{
+  "_id": {
+    "$oid": "5eee66a5a27a66807cf2bea5"
+  },
+  "name": "Fruit Cake",
+  "image": "cake3.jpg",
+"retailer_name":"retailer1",
+  "price": "500",
+  "size": "large"
+},{
+  "_id": {
+    "$oid": "5eee66c4a27a66807cf2bea6"
+  },
+  "name": "White Forest",
+  "image": "cake1.jpg",
+"retailer_name":"retailer7",
+  "price": "350",
+  "size": "medium"
+},{
+  "_id": {
+    "$oid": "5eee66cfa27a66807cf2bea7"
+  },
+  "name": "Black Forest",
+  "image": "cake2.jpg",
+"retailer_name":"retailer3",
+  "price": "1200",
+  "size": "medium"
+},{
+  "_id": {
+    "$oid": "5eee66eea27a66807cf2bea8"
+  },
+  "name": "Fruit Cake",
+  "image": "cake3.jpg",
+"retailer_name":"retailer5",
+  "price": "900",
+  "size": "large"
+},{
+  "_id": {
+    "$oid": "5eee6717a27a66807cf2bea9"
+  },
+  "name": "Anniversary Cake",
+  "image": "cake4.jpg",
+"retailer_name":"retailer6",
+  "price": "1000",
+  "size": "large"
+}]
